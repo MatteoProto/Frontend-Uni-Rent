@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'unirent';
+  title = 'unirent'
+
+  // img path
+  staticPath = 'assets/images/static'
+  backgroundPath = ''
+  logoPath = this.staticPath + '/logo.png'
+  placeholderCirclePath = this.staticPath + '/placeholder-circle.png'
+  dePintoPath = this.staticPath + '/de-pinto.png'
 }

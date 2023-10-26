@@ -2,9 +2,9 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <div class="container">
     <a class="navbar-brand" href="#">
-      <img src="favicon.ico" width="50" height="50" alt="...">
+      <img ngSrc="{{logoPath}}" width="50" height="50" alt="">
+      <span class="text-info">Uni</span>Rent
     </a>
-    <a class="navbar-brand" href="#"><span class="text-logo">Uni</span>Rent</a>
     <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
             class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
       <span class="navbar-toggler-icon"></span></button>
@@ -14,7 +14,7 @@
           <a class="nav-link" href="#">Annunci</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#about">Su di noi</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#services">Servizi</a>
@@ -23,10 +23,7 @@
           <a class="nav-link" href="#team">Team</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#log-in">Log In</a>
+          <a class="nav-link" href="#log-in">Accedi</a> <!-- TODO -->
         </li>
       </ul>
     </div>
@@ -38,11 +35,11 @@
 <div class="carousel slide" data-bs-ride="false" id="carouselExampleIndicators">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img alt="..." class="d-block w-100" src="">
+      <img ngSrc="{{backgroundPath}}" class="d-block w-100" alt="" fill="">
       <div class="carousel-caption">
         <h5>Annunci</h5>
         <p>Trova il tuo alloggio ideale durante gli anni universitari.</p>
-        <p><a class="btn btn-warning mt-3" href="#">Annunci</a></p>
+        <p><a class="btn btn-info mt-3" href="#">Annunci</a></p>
       </div>
     </div>
   </div>
@@ -54,16 +51,18 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-4 col-md-12 col-12">
-        <div class="about-img"><img alt="" class="img-fluid" src="img/about.jpg"></div>
+        <div class="about-img">
+          <img ngSrc="{{logoPath}}" class="img-fluid" alt="" width="200"
+               height="200">
+        </div>
       </div>
       <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
         <div class="about-text">
-          <h2>We Provide the Best Quality<br>
-            Services Ever</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, labore reiciendis. Assumenda eos quod
-            animi! Soluta nesciunt inventore dolores excepturi provident, culpa beatae tempora, explicabo corporis
-            quibusdam corrupti. Autem, quaerat. Assumenda quo aliquam vel, nostrum explicabo ipsum dolor, ipsa
-            perferendis porro doloribus obcaecati placeat natus iste odio est non earum?</p>
+          <h2>Il miglior servizio di affitti<br>
+            per studenti universitari in Italia</h2>
+          <p>Siamo UniRent, un'azienda che fornisce affitti in maniera semplice
+            e al minor prezzo sul mercato. Siamo impegnati a offrirti il miglior
+            servizio nella scelta del tuo alloggio ideale durante gli anni universitari.</p>
         </div>
       </div>
     </div>
@@ -77,9 +76,9 @@
     <div class="row">
       <div class="col-md-12">
         <div class="section-header text-center pb-5">
-          <h2>Our Services</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur<br>
-            adipisicing elit. Non, quo.</p>
+          <h2>I nostri Servizi</h2>
+          <p>Offriamo una gamma di servizi per aiutarti a<br>
+            trovare il tuo alloggio ideale per gli anni universitari.</p>
         </div>
       </div>
     </div>
@@ -87,30 +86,28 @@
       <div class="col-12 col-md-12 col-lg-4">
         <div class="card text-white text-center bg-dark pb-2">
           <div class="card-body">
-            <i class="bi bi-laptop"></i>
-            <h3 class="card-title">Best Quality</h3>
-            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi modi temporibus
-              alias iste. Accusantium?</p>
+            <i class="bi bi-people-fill"></i>
+            <h3 class="card-title">Matchmaking</h3>
+            <p class="lead">Trova i coinquilini ideali in base ai tui interessi, abitudini di studio e preferenze.</p>
           </div>
         </div>
       </div>
       <div class="col-12 col-md-12 col-lg-4">
         <div class="card text-white text-center bg-dark pb-2">
           <div class="card-body">
-            <i class="bi bi-journal"></i>
-            <h3 class="card-title">Sustainability</h3>
-            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi modi temporibus
-              alias iste. Accusantium?</p>
+            <i class="bi bi-rocket-takeoff-fill"></i>
+            <h3 class="card-title">Ricerca Avanzata</h3>
+            <p class="lead">Sfrutta il massimo potenziale dell'intelligenza artificiale per trovare il tuo alloggio
+              ideale.</p>
           </div>
         </div>
       </div>
       <div class="col-12 col-md-12 col-lg-4">
         <div class="card text-white text-center bg-dark pb-2">
           <div class="card-body">
-            <i class="bi bi-intersect"></i>
-            <h3 class="card-title">Integrity</h3>
-            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi modi temporibus
-              alias iste. Accusantium?</p>
+            <i class="bi bi-chat-left-fill"></i>
+            <h3 class="card-title">Chat Integrata</h3>
+            <p class="lead">Comunica direttamente con l'affittuario o con il cliente direttamente da UniRent</p>
           </div>
         </div>
       </div>
@@ -125,9 +122,8 @@
     <div class="row">
       <div class="col-md-12">
         <div class="section-header text-center pb-5">
-          <h2>Our Team</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur<br>
-            adipisicing elit. Non, quo.</p>
+          <h2>Il nostro Team</h2>
+          <p>Il team è composto da persone entusiasti di offrire un servizio di qualità.</p>
         </div>
       </div>
     </div>
@@ -135,64 +131,60 @@
       <div class="col-12 col-md-12 col-lg-4">
         <div class="card text-center">
           <div class="card-body">
-            <img alt="" class="img-fluid rounded-circle" src="img/team-1.jpg">
-            <h3 class="card-title py-2">Jack Wilson</h3>
-            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam nostrum illo
-              tempora esse quibusdam.</p>
-            <p class="socials"><i class="bi bi-twitter text-dark mx-1"></i> <i
-              class="bi bi-facebook text-dark mx-1"></i> <i class="bi bi-linkedin text-dark mx-1"></i> <i
-              class="bi bi-instagram text-dark mx-1"></i></p>
+            <img ngSrc="{{dePintoPath}}" width="200" height="200"
+                 class="img-fluid rounded-circle"
+                 alt="">
+            <h3 class="card-title py-2">Francesco de Pinto</h3>
+            <p class="card-text">Classe 2000 studente di ingegneria informatica e dell'automazione presso il Politecnico
+              di Bari</p>
+            <p class="socials">
+              <a href="https://www.linkedin.com/in/francesco-de-pinto/" target="_blank">
+                <i class="bi bi-linkedin text-dark mx-1"></i></a>
+              <a href="https://github.com/Reinharl" target="_blank">
+                <i class="bi bi-github text-dark mx-1"></i></a>
+            </p>
           </div>
         </div>
       </div>
       <div class="col-12 col-md-12 col-lg-4">
         <div class="card text-center">
           <div class="card-body">
-            <img alt="" class="img-fluid rounded-circle" src="img/team-2.jpg">
-            <h3 class="card-title py-2">Jack Wilson</h3>
+            <img ngSrc="{{placeholderCirclePath}}" width="200" height="200"
+                 class="img-fluid rounded-circle"
+                 alt="">
+            <h3 class="card-title py-2">Leo</h3>
             <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam nostrum illo
               tempora esse quibusdam.</p>
-            <p class="socials"><i class="bi bi-twitter text-dark mx-1"></i> <i
-              class="bi bi-facebook text-dark mx-1"></i> <i class="bi bi-linkedin text-dark mx-1"></i> <i
-              class="bi bi-instagram text-dark mx-1"></i></p>
+            <p class="socials"><i class="bi bi-linkedin text-dark mx-1"></i>
+              <i class="bi bi-github text-dark mx-1"></i>
+              <i class="bi bi-facebook text-dark mx-1"></i>
+              <i class="bi bi-instagram text-dark mx-1"></i>
+            </p>
           </div>
         </div>
       </div>
       <div class="col-12 col-md-12 col-lg-4">
         <div class="card text-center">
           <div class="card-body">
-            <img alt="" class="img-fluid rounded-circle" src="img/team-3.jpg">
-            <h3 class="card-title py-2">Jack Wilson</h3>
+            <img ngSrc="{{placeholderCirclePath}}" width="200" height="200"
+                 class="img-fluid rounded-circle"
+                 alt="">
+            <h3 class="card-title py-2">Matteo Protopapa</h3>
             <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam nostrum illo
               tempora esse quibusdam.</p>
-            <p class="socials"><i class="bi bi-twitter text-dark mx-1"></i> <i
-              class="bi bi-facebook text-dark mx-1"></i> <i class="bi bi-linkedin text-dark mx-1"></i> <i
-              class="bi bi-instagram text-dark mx-1"></i></p>
+            <p class="socials"><i class="bi bi-linkedin text-dark mx-1"></i>
+              <i class="bi bi-github text-dark mx-1"></i>
+              <i class="bi bi-facebook text-dark mx-1"></i>
+              <i class="bi bi-instagram text-dark mx-1"></i>
+            </p>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section><!-- team ends -->
-<!-- Contact starts -->
-<section class="contact section-padding" id="contact">
-  <div class="container mt-5 mb-5">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="section-header text-center pb-5">
-          <h2>Contact Us</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur<br>
-            adipisicing elit. Non, quo.</p>
-        </div>
-      </div>
-    </div>
-    <div class="row m-0">
-      <div class="col-md-12 p-0 pt-4 pb-4">
-        <!--for getting the form download the code from download button-->
-      </div>
-    </div>
-  </div>
-</section><!-- contact ends -->
+</section>
+<!-- team end -->
+
 <!-- footer starts -->
 <footer class="bg-dark p-2 text-center">
   <div class="container">
