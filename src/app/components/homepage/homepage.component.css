@@ -1,0 +1,113 @@
+.img-item {
+  height: 100vh;
+  min-height: 300px;
+}
+
+.img-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 1.25rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
+
+  top: 370px;
+  z-index: 2;
+}
+
+.img-caption h5 {
+  font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 25px;
+}
+
+.img-caption p {
+  width: 60%;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+.img-inner:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.img-inner::after {
+  display: block;
+  clear: both;
+  content: ""
+}
+
+.w-100 {
+  height: 100vh;
+}
+
+.team .card {
+  box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.services .card-body i {
+  font-size: 50px;
+}
+
+.team .card-body i {
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .img-caption {
+    top: 370px;
+  }
+
+  .img-caption p {
+    width: 100%;
+  }
+
+  .card {
+    margin-bottom: 30px;
+  }
+
+  .img-area img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  .img-caption {
+    top: 370px;
+  }
+
+  .img-caption h5 {
+    font-size: 17px;
+  }
+
+  .img-caption a {
+    padding: 10px 15px;
+    font-size: 15px;
+  }
+
+  .img-caption p {
+    width: 100%;
+    line-height: 1.6;
+    font-size: 12px;
+  }
+
+  .about-text {
+    padding-top: 50px;
+  }
+
+  .card {
+    margin-bottom: 30px;
+  }
+}
