@@ -7,11 +7,12 @@ import {LoginComponent} from './components/login/login.component';
 import {AdsComponent} from './components/ads/ads.component';
 import {RouterModule, Routes} from "@angular/router";
 import {HomepageComponent} from './components/homepage/homepage.component';
+import { RegistrationComponent } from './components/registration/registration.component';
 
 const routes: Routes = [
   {path: 'ads', component: AdsComponent},
   {path: 'login', component: LoginComponent},
-  {path: 'homepage', component: HomepageComponent},
+  {path: 'registration', component: RegistrationComponent},
   {path: 'homepage', component: HomepageComponent},
   {path: '', redirectTo: '/homepage', pathMatch: 'full'}
 ]
@@ -21,7 +22,8 @@ const routes: Routes = [
     AppComponent,
     LoginComponent,
     AdsComponent,
-    HomepageComponent
+    HomepageComponent,
+    RegistrationComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
