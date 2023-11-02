@@ -2,12 +2,12 @@
 <html>
 <head>
     <title>Registrazione</title>
-    <link rel="stylesheet" type="text/css" href="registration.component.css">
+    <link rel="stylesheet" type="text/css" href="registration.component.css" onsubmit="submitForm(event)">
 </head>
 <body>
     <div class="login-container">
         <h1>Registrazione</h1>
-        <form class="login-form" action="registrazione.php" method="POST">
+        <form class="login-form" id="registrationForm" action="registrazione.php" method="POST" onsubmit="submitForm(event)">
             <div class="form-group">
                 <label for="username">Nome utente:</label>
                 <input type="text" id="username" name="username" required>
@@ -22,7 +22,14 @@
             </div>
             <button type="submit">Registrati</button>
         </form>
-
+        <script>
+            function submitForm(event) {
+                        event.preventDefault();
+                        document.getElementById("registrationForm").submit();
+                        window.location.href = "../preference/preference.component.html";
+                    }
+        </script>
     </div>
 </body>
 </html>
+
