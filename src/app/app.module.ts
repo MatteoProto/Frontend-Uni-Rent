@@ -8,8 +8,10 @@ import {LoginComponent} from './components/login/login.component';
 import {AdsComponent} from './components/ads/ads.component';
 import {RouterModule, Routes} from "@angular/router";
 import {HomepageComponent} from './components/homepage/homepage.component';
-import { RegistrationComponent } from './components/registration/registration.component';
-import { InsertComponent } from './components/insert/insert.component';
+import {RegistrationComponent} from './components/registration/registration.component';
+import {InsertComponent} from './components/insert/insert.component';
+import {HttpClientModule} from "@angular/common/http";
+import {AdsService} from "./services/ads.service";
 
 const routes: Routes = [
   {path: 'ads', component: AdsComponent},
@@ -32,9 +34,10 @@ const routes: Routes = [
   imports: [
     RouterModule.forRoot(routes),
     BrowserModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [AdsService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
